@@ -45,3 +45,13 @@ console.log(Object.values(tinderUser))//array of values
 console.log(Object.entries(tinderUser))//array of entries of key-value pair
 
 console.log(tinderUser.hasOwnProperty('isLogged'))//checks the property in tinderUser
+
+const course={
+    courseName:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+//destructoring the object
+const {courseInstructor:d}=course//: to rename the property of this courseInstructor key name
+console.log(d)
+
