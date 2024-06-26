@@ -27,3 +27,24 @@ function cal(val1,val2, ...num1){
     return num1
 }
 console.log(cal(200,400,600,3000))//array of num1 contains only 600,3000.
+
+function calculateCartPrice(...num1){ //rest operator ->...
+    return num1
+}
+console.log(calculateCartPrice(200,400,500))
+
+const user={
+    username:"devanshu",
+    price:199
+}
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(user)
+
+const myNewArray=[200,400,100,600]
+function returnsecondValue(getArray){
+    console.log(getArray[1])
+}
+const newArray=[100,300,500]
+returnsecondValue(newArray)
