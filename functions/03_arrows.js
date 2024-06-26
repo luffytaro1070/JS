@@ -34,9 +34,10 @@ console.log(addTwo(3,4))
 //named iife
 // (function chai(){
 //     console.log('DB connected');
-// })();
+// })();//semi colon ; for ending the current context
+// necessary to run the next iife
 
-//unnamed iife
+//unnamed/simple iife
 ( (name)=>{
     console.log(`name ${name}`)
 })('hitesh')
